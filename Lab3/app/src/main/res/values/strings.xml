@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TaskManagerApp</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Task Description</string>
+    <string name="done">Виконано✓</string>
+    <string name="edit">Редагувати✎</string>
+    <string name="delete">Видалити🗑</string>
+    <string name="add">Add Task</string>
+</resources>

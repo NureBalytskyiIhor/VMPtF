@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список статей</title>
+</head>
+<body>
+    <h1>Список статей</h1>
+    <ul>
+        {% for article in articles %}
+            <li>
+                <strong>{{ article.title }}</strong><br>
+                {{ article.text|truncatechars:100 }}<br>
+                <a href="{% url 'article_edit' article.pk %}">Редагувати</a> |
+                <a href="{% url 'article_delete' article.pk %}">Видалити</a>
+            </li>
+        {% empty %}
+            <li>Немає статей</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Видалення статті</title>
+</head>
+<body>
+    <h1>Видалити статтю "{{ article.title }}"?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Так, видалити</button>
+    </form>
+    <a href="{% url 'article_list' %}">Скасувати</a>
+</body>
+</html>

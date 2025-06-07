@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редагування статті</title>
+</head>
+<body>
+    <h1>Редагувати статтю</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Зберегти</button>
+    </form>
+    <a href="{% url 'article_list' %}">Назад до списку</a>
+</body>
+</html>
